@@ -1,7 +1,6 @@
 package com.example.webshop.controller;
 
 import com.example.webshop.entity.Category;
-import com.example.webshop.entity.Product;
 import com.example.webshop.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class CategoryController {
 
