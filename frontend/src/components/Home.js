@@ -4,12 +4,12 @@ class Home extends Component {
   
     state = {
         categories: []
-      };
+    };
     
     async componentDidMount() {
-       const response = await fetch('/categories');
-       const body = await response.json();
-       this.setState({categories: body});
+        const response = await fetch('/categories');
+        const body = await response.json();
+        this.setState({categories: body});
     }
 
     render() {
